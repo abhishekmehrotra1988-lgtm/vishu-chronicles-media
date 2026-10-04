@@ -2,8 +2,8 @@ name: Generate Vishu Daily Comic
 
 on:
   schedule:
-    # 19:15 IST = 13:45 UTC. Gives the publisher one hour of buffer.
-    - cron: '45 13 * * *'
+    # 07:15 IST = 01:45 UTC. Generates all four daily episodes before the first post.
+    - cron: '45 1 * * *'
   workflow_dispatch:
 
 permissions:
