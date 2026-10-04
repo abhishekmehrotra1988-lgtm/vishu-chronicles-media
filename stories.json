@@ -1,10 +1,308 @@
 [
-  {"theme":"sticker-mission","title":"The Sticker Mission","prop":"stickers","rule":"If Vishu decorates it, Didi gets final approval!","hook":"Tomorrow, Vishu spots a tower of plastic cups...","caption":"Vishu found Didi's sticker sheet — and suddenly everything looked like it needed stars! ⭐😂","panels":[{"speaker":"Vishu","text":"Didi! Star!"},{"speaker":"Pihu","text":"Only ONE sticker, okay?"},{"speaker":"Vishu","text":"One... two... many!"},{"speaker":"Pihu","text":"My notebook is a galaxy!"},{"speaker":"Vishu","text":"Pretty, Didi?"},{"speaker":"Pihu","text":"Now YOU get one tiny star!"}]},
-  {"theme":"cup-tower","title":"The Cup Tower","prop":"cups","rule":"Tiny builders must help rebuild what they crash!","hook":"Next, Vishu discovers the tissue box...","caption":"A few plastic cups became Vishu's biggest construction project — until Didi walked in. 🥤🏗️😂","panels":[{"speaker":"Vishu","text":"Big tower!"},{"speaker":"Pihu","text":"Careful, engineer Vishu."},{"speaker":"Vishu","text":"Higher! Higher!"},{"speaker":"Pihu","text":"That tower is leaning..."},{"speaker":"Vishu","text":"BOOM!"},{"speaker":"Pihu","text":"Now the engineer cleans the site!"}]},
-  {"theme":"tissue-snow","title":"Tissue Snowstorm","prop":"tissues","rule":"If you make indoor snow, you help collect every snowflake!","hook":"Tomorrow's clue: colourful toy blocks on the floor...","caption":"Vishu discovered that tissues can become snow. Didi discovered that snow can cover an entire room. ❄️😂","panels":[{"speaker":"Vishu","text":"Snow!"},{"speaker":"Pihu","text":"Vishu... that is the tissue box."},{"speaker":"Vishu","text":"More snow!"},{"speaker":"Pihu","text":"Mummy will see this!"},{"speaker":"Vishu","text":"Didi hide snow?"},{"speaker":"Pihu","text":"Nope. Team clean-up starts NOW!"}]},
-  {"theme":"block-roadblock","title":"The Block Roadblock","prop":"blocks","rule":"Mischief roads need a clean-up lane too!","hook":"Next episode: Vishu hears two spoons making music...","caption":"Vishu built a roadblock right where Didi needed to walk. The traffic police arrived quickly. 🚧😂","panels":[{"speaker":"Vishu","text":"Stop! Road closed!"},{"speaker":"Pihu","text":"Excuse me, tiny officer?"},{"speaker":"Vishu","text":"Pay one hug!"},{"speaker":"Pihu","text":"That is a very expensive toll."},{"speaker":"Vishu","text":"Didi paid!"},{"speaker":"Pihu","text":"Now toll officer clears every block."}]},
-  {"theme":"spoon-orchestra","title":"The Spoon Orchestra","prop":"spoons","rule":"Every noisy concert needs a quiet finale!","hook":"Tomorrow, the laundry basket starts moving...","caption":"Vishu found two spoons. The living room immediately became a concert hall. 🥄🎵😂","panels":[{"speaker":"Vishu","text":"Music!"},{"speaker":"Pihu","text":"That is VERY loud music."},{"speaker":"Vishu","text":"Didi dance!"},{"speaker":"Pihu","text":"Only if the drummer plays softly."},{"speaker":"Vishu","text":"LOUD finale!"},{"speaker":"Pihu","text":"Concert over. Instruments to kitchen!"}]},
-  {"theme":"laundry-train","title":"The Laundry Train","prop":"laundry","rule":"Passengers ride only after the laundry reaches its station!","hook":"Next, Vishu finds Didi's stack of storybooks...","caption":"A laundry basket plus one mischievous toddler equals the Vishu Express. 🚂😂","panels":[{"speaker":"Vishu","text":"Choo choo!"},{"speaker":"Pihu","text":"That is Mummy's laundry basket."},{"speaker":"Vishu","text":"Didi push train!"},{"speaker":"Pihu","text":"First stop: clothes cupboard."},{"speaker":"Vishu","text":"No! Toy station!"},{"speaker":"Pihu","text":"Cupboard first, then one tiny ride."}]},
-  {"theme":"book-stack","title":"The Book Stack","prop":"books","rule":"Book towers are for reading before rebuilding!","hook":"Tomorrow: fridge magnets mysteriously change places...","caption":"Vishu turned Didi's books into a tower. Didi turned the tower into story time. 📚😂","panels":[{"speaker":"Vishu","text":"Tall!"},{"speaker":"Pihu","text":"Those are my storybooks."},{"speaker":"Vishu","text":"Book building!"},{"speaker":"Pihu","text":"Buildings need a reading permit."},{"speaker":"Vishu","text":"Story first?"},{"speaker":"Pihu","text":"Exactly. Then we rebuild together."}]},
-  {"theme":"magnet-mixup","title":"The Magnet Mix-Up","prop":"magnets","rule":"If you rearrange the letters, you help put the message back!","hook":"Next: Vishu discovers a basket of soft toys...","caption":"The fridge alphabet had one job. Vishu gave it a completely new language. 🔤😂","panels":[{"speaker":"Vishu","text":"A! B! C!"},{"speaker":"Pihu","text":"Good job, Vishu!"},{"speaker":"Vishu","text":"Now... C A B!"},{"speaker":"Pihu","text":"You invented a new alphabet."},{"speaker":"Vishu","text":"Vishu language!"},{"speaker":"Pihu","text":"Professor Vishu, class now fixes ABC."}]}
+  {
+    "theme": "study-pretend",
+    "title": "The Serious Student",
+    "prop": "books",
+    "rule": "If you join Didi's study time, finish one tiny lesson before the mischief!",
+    "hook": "Vishu finishes his tiny lesson... then spots Didi's shiny sticker sheet.",
+    "caption": "Yesterday Vishu promised to study. Today he arrived VERY prepared... for exactly two minutes. 📚😂",
+    "panels": [
+      {
+        "speaker": "Vishu",
+        "text": "Didi! Vishu study!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Really? Show me your serious face."
+      },
+      {
+        "speaker": "Vishu",
+        "text": "A... B... done!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "That was the world's shortest class."
+      },
+      {
+        "speaker": "Vishu",
+        "text": "Didi... stars?"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Uh-oh. Why are you looking at my sticker sheet?"
+      }
+    ]
+  },
+  {
+    "theme": "sticker-mission",
+    "title": "The Sticker Mission",
+    "prop": "stickers",
+    "rule": "If Vishu decorates it, Didi gets final approval!",
+    "hook": "Tomorrow, Vishu spots a tower of plastic cups...",
+    "caption": "Vishu found Didi's sticker sheet — and suddenly everything looked like it needed stars! ⭐😂",
+    "panels": [
+      {
+        "speaker": "Vishu",
+        "text": "Didi! Star!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Only ONE sticker, okay?"
+      },
+      {
+        "speaker": "Vishu",
+        "text": "One... two... many!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "My notebook is a galaxy!"
+      },
+      {
+        "speaker": "Vishu",
+        "text": "Pretty, Didi?"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Now YOU get one tiny star!"
+      }
+    ]
+  },
+  {
+    "theme": "cup-tower",
+    "title": "The Cup Tower",
+    "prop": "cups",
+    "rule": "Tiny builders must help rebuild what they crash!",
+    "hook": "Next, Vishu discovers the tissue box...",
+    "caption": "A few plastic cups became Vishu's biggest construction project — until Didi walked in. 🥤🏗️😂",
+    "panels": [
+      {
+        "speaker": "Vishu",
+        "text": "Big tower!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Careful, engineer Vishu."
+      },
+      {
+        "speaker": "Vishu",
+        "text": "Higher! Higher!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "That tower is leaning..."
+      },
+      {
+        "speaker": "Vishu",
+        "text": "BOOM!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Now the engineer cleans the site!"
+      }
+    ]
+  },
+  {
+    "theme": "tissue-snow",
+    "title": "Tissue Snowstorm",
+    "prop": "tissues",
+    "rule": "If you make indoor snow, you help collect every snowflake!",
+    "hook": "Tomorrow's clue: colourful toy blocks on the floor...",
+    "caption": "Vishu discovered that tissues can become snow. Didi discovered that snow can cover an entire room. ❄️😂",
+    "panels": [
+      {
+        "speaker": "Vishu",
+        "text": "Snow!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Vishu... that is the tissue box."
+      },
+      {
+        "speaker": "Vishu",
+        "text": "More snow!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Mummy will see this!"
+      },
+      {
+        "speaker": "Vishu",
+        "text": "Didi hide snow?"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Nope. Team clean-up starts NOW!"
+      }
+    ]
+  },
+  {
+    "theme": "block-roadblock",
+    "title": "The Block Roadblock",
+    "prop": "blocks",
+    "rule": "Mischief roads need a clean-up lane too!",
+    "hook": "Next episode: Vishu hears two spoons making music...",
+    "caption": "Vishu built a roadblock right where Didi needed to walk. The traffic police arrived quickly. 🚧😂",
+    "panels": [
+      {
+        "speaker": "Vishu",
+        "text": "Stop! Road closed!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Excuse me, tiny officer?"
+      },
+      {
+        "speaker": "Vishu",
+        "text": "Pay one hug!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "That is a very expensive toll."
+      },
+      {
+        "speaker": "Vishu",
+        "text": "Didi paid!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Now toll officer clears every block."
+      }
+    ]
+  },
+  {
+    "theme": "spoon-orchestra",
+    "title": "The Spoon Orchestra",
+    "prop": "spoons",
+    "rule": "Every noisy concert needs a quiet finale!",
+    "hook": "Tomorrow, the laundry basket starts moving...",
+    "caption": "Vishu found two spoons. The living room immediately became a concert hall. 🥄🎵😂",
+    "panels": [
+      {
+        "speaker": "Vishu",
+        "text": "Music!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "That is VERY loud music."
+      },
+      {
+        "speaker": "Vishu",
+        "text": "Didi dance!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Only if the drummer plays softly."
+      },
+      {
+        "speaker": "Vishu",
+        "text": "LOUD finale!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Concert over. Instruments to kitchen!"
+      }
+    ]
+  },
+  {
+    "theme": "laundry-train",
+    "title": "The Laundry Train",
+    "prop": "laundry",
+    "rule": "Passengers ride only after the laundry reaches its station!",
+    "hook": "Next, Vishu finds Didi's stack of storybooks...",
+    "caption": "A laundry basket plus one mischievous toddler equals the Vishu Express. 🚂😂",
+    "panels": [
+      {
+        "speaker": "Vishu",
+        "text": "Choo choo!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "That is Mummy's laundry basket."
+      },
+      {
+        "speaker": "Vishu",
+        "text": "Didi push train!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "First stop: clothes cupboard."
+      },
+      {
+        "speaker": "Vishu",
+        "text": "No! Toy station!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Cupboard first, then one tiny ride."
+      }
+    ]
+  },
+  {
+    "theme": "book-stack",
+    "title": "The Book Stack",
+    "prop": "books",
+    "rule": "Book towers are for reading before rebuilding!",
+    "hook": "Tomorrow: fridge magnets mysteriously change places...",
+    "caption": "Vishu turned Didi's books into a tower. Didi turned the tower into story time. 📚😂",
+    "panels": [
+      {
+        "speaker": "Vishu",
+        "text": "Tall!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Those are my storybooks."
+      },
+      {
+        "speaker": "Vishu",
+        "text": "Book building!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Buildings need a reading permit."
+      },
+      {
+        "speaker": "Vishu",
+        "text": "Story first?"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Exactly. Then we rebuild together."
+      }
+    ]
+  },
+  {
+    "theme": "magnet-mixup",
+    "title": "The Magnet Mix-Up",
+    "prop": "magnets",
+    "rule": "If you rearrange the letters, you help put the message back!",
+    "hook": "Next: Vishu discovers a basket of soft toys...",
+    "caption": "The fridge alphabet had one job. Vishu gave it a completely new language. 🔤😂",
+    "panels": [
+      {
+        "speaker": "Vishu",
+        "text": "A! B! C!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Good job, Vishu!"
+      },
+      {
+        "speaker": "Vishu",
+        "text": "Now... C A B!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "You invented a new alphabet."
+      },
+      {
+        "speaker": "Vishu",
+        "text": "Vishu language!"
+      },
+      {
+        "speaker": "Pihu",
+        "text": "Professor Vishu, class now fixes ABC."
+      }
+    ]
+  }
 ]
