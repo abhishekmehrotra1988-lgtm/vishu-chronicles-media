@@ -152,21 +152,34 @@ def main():
     stories=json.loads(STORIES.read_text(encoding='utf-8'))
     history=json.loads(HISTORY.read_text(encoding='utf-8')) if HISTORY.exists() else []
     today=datetime.now(ZoneInfo('Asia/Kolkata')).date().isoformat()
-    existing=next((h for h in history if h.get('date')==today),None)
-    if existing:
-        story=next(s for s in stories if s['theme']==existing['theme'])
-    else:
-        used=[h.get('theme') for h in history]
-        story=next((s for s in stories if s['theme'] not in used),stories[len(history)%len(stories)])
-        history.append({'date':today,'theme':story['theme'],'title':story['title']})
-        HISTORY.write_text(json.dumps(history,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-    filename=f"{today}-{slugify(story['theme'])}.jpg"
-    render(story,OUT/filename)
-    caption=(f"{story['caption']}\n\nSibling Rule: {story['rule']}\n{story['hook']}\n\n"
-             "#VishuChronicles #DidiAndVishu #SiblingMischief #FamilyComics #SiblingLove #ChildhoodAdventures")
-    manifest={'id':f"auto-{today}-{slugify(story['theme'])}",'date':today,'theme':story['theme'],'title':story['title'],'caption':caption,
-              'media_url':f"{REPO_RAW}/generated/{filename}",'approved':True,'published':False,'status':'ready','auto_generated':True,'renderer':'zero-cost-template-v1'}
-    LATEST.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-    print(json.dumps(manifest,ensure_ascii=False))
+    todays=[h for h in history if h.get('date')==today]
+    manifests=[]
+    used=[h.get('theme') for h in history if h.get('theme')]
+
+    for slot in range(1,5):
+        existing=next((h for h in todays if h.get('slot')==slot),None)
+        if existing:
+            story=next(s for s in stories if s['theme']==existing['theme'])
+        else:
+            story=next((s for s in stories if s['theme'] not in used),stories[len(used)%len(stories)])
+            used.append(story['theme'])
+            history.append({'date':today,'slot':slot,'theme':story['theme'],'title':story['title']})
+
+        filename=f"{today}-s{slot}-{slugify(story['theme'])}.jpg"
+        render(story,OUT/filename)
+        caption=(f"{story['caption']}\n\nSibling Rule: {story['rule']}\nNext: {story['hook']}\n\n"
+                 "#VishuChronicles #DidiAndVishu #SiblingMischief #FamilyComics #SiblingLove #ChildhoodAdventures")
+        manifests.append({
+            'id':f"auto-{today}-s{slot}-{slugify(story['theme'])}",
+            'date':today,'slot':slot,'theme':story['theme'],'title':story['title'],'caption':caption,
+            'media_url':f"{REPO_RAW}/generated/{filename}",
+            'approved':True,'published':False,'status':'ready','auto_generated':True,
+            'renderer':'zero-cost-template-v1'
+        })
+
+    HISTORY.write_text(json.dumps(history,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+    (OUT/'daily_queue.json').write_text(json.dumps(manifests,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+    LATEST.write_text(json.dumps(manifests[-1],indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+    print(json.dumps(manifests,ensure_ascii=False))
 
 if __name__=='__main__': main()
